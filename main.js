@@ -30,7 +30,5 @@ let myFunction = (data) => {
         cards.append(card)
         card.append(img, texts)
         texts.append(title, description, price)
-
-        console.log(img);
     }
 }
