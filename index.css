@@ -1,0 +1,280 @@
+:root{
+    --black-color: #121212;
+    --gray-color: #656565;
+    --red-color: #FF5634;
+    --transition: all 0.5s ease;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 110px;
+    gap: 170px;
+}
+
+hr{
+    width: 100%;
+}
+
+header{
+    width: 100%;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 32px 110px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    box-shadow: 0px 3px 12px 0px #1212120F;
+}
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 26px;
+}
+
+a{
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--black-color);
+}
+
+a:hover{
+    color: var(--gray-color);
+    text-decoration: underline;
+}
+
+
+.buttons{
+    display: flex;
+    gap: 27px;
+}
+
+.navbar-buttons{
+    display: flex;
+    gap: 18px;
+}
+
+button{
+    cursor: pointer;
+    font-family: roboto;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    background-color: #fff;
+    padding: 25px 40px;
+    border-radius: 15px;
+    border: 2px solid #d7d7d7;
+    transition: var(--transition);
+}
+
+.navbar-button{
+    padding: 19px 25px;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: var(--red-color);
+    border: none;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.header-sect{
+    height: 1000px;
+    margin-top: 127px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.header-container{
+    width: 586px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.header-texts{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.description{
+    font-family: roboto;
+    font-size: 18px;
+    color: var(--red-color);
+    text-transform: uppercase;
+}
+
+h1{
+    font-family: Roboto;
+    font-size: 62px;
+    font-weight: 700;
+    color: var(--black-color);
+}
+
+.subtitle{
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--gray-color);
+}
+
+.company-facts{
+    display: flex;
+    gap: 35px;
+}
+
+.company-fact{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.company__fact-title{
+    font-family: Roboto;
+    font-size: 56px;
+    font-weight: 700;
+    color: var(--black-color);
+}
+
+span{
+    color: var(--red-color);
+    font-weight: 400;
+}
+
+.company__fact-subtitle{
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--gray-color);
+}
+
+.food-img{
+    position: absolute;
+    top: 127px;
+    right: 0;
+    z-index: -1;
+}
+
+.application-img{
+    transition: var(--transition);
+}
+
+.application-img:hover{
+    transform: scale(1.1);
+}
+
+.section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+.section-description{
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--gray-color);
+}
+
+.section-images{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards-sect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 68px;
+}
+
+.cards__sect-texts{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+
+.cards__sect-title{
+    font-family: Roboto;
+    font-size: 44px;
+    font-weight: 700;
+    color: var(--black-color);
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+}
+
+.card{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f2f2f2;
+    transition: all 0.5s ease;
+}
+
+.card:hover{
+    border-radius: 20px;
+    transform: scale(1.1);
+}
+
+.card-img{
+    width: 200px;
+    height: 250px;
+}
+
+.card-texts{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    margin-right: auto;
+}
+
+.card-title{
+    font-family: roboto;
+    font-size: 28px;
+    color: var(--black-color);
+}
+
+.card-subtitle{
+    font-family: roboto;
+    font-size: 18px;
+    color: var(--gray-color);
+}
